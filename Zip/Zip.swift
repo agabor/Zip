@@ -104,7 +104,7 @@ public class Zip {
         // Check whether a zip file exists at path.
         let path = zipFilePath.path
         
-        if fileManager.fileExists(atPath: path) == false || fileExtensionIsInvalid(zipFilePath.pathExtension) {
+        if fileManager.fileExists(atPath: path) == false {
             throw ZipError.fileNotFound
         }
         
